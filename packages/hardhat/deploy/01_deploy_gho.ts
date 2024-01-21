@@ -24,7 +24,8 @@ const deployGhoToken: DeployFunction = async function (hre: HardhatRuntimeEnviro
   await deploy("GhoToken", {
     from: deployer,
     // Contract constructor arguments
-    args: [deployer],
+    // args: [deployer],
+    args: ["0xE3c382A8B72643CC3756D532e967Eb44e885c619"],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
